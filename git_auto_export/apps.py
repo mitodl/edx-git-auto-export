@@ -25,4 +25,4 @@ class GitAutoExportConfig(AppConfig):
         if not os.path.exists(git_repo_export_dir):
             # for development/docker/vagrant if GIT_REPO_EXPORT_DIR folder does not exist then create it
             log.error("GIT_REPO_EXPORT_DIR is not available in settings, please create it first")
-            os.makedirs(git_repo_export_dir, 0755)
+            os.makedirs(git_repo_export_dir, 0o755)
