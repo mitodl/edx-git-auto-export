@@ -3,7 +3,7 @@ from django.dispatch import receiver
 from xmodule.modulestore.django import SignalHandler
 
 from django.conf import settings
-from tasks import async_export_to_git
+from .tasks import async_export_to_git
 
 log = logging.getLogger(__name__)
 
@@ -18,4 +18,4 @@ def listen_for_course_publish(sender, course_key, **kwargs):  # pylint: disable=
         log.info(
             'Course published with auto-export enabled. Starting export... (course id: %s)', course_key
         )
-        async_export_to_git.delay(unicode(course_key))
+        async_export_to_git.delay(str(course_key))
