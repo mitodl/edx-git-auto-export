@@ -3,7 +3,7 @@ from celery.utils.log import get_task_logger
 
 from opaque_keys.edx.keys import CourseKey
 from xmodule.modulestore.django import modulestore
-from contentstore.git_export_utils import export_to_git, GitExportError
+from cms.djangoapps.contentstore.git_export_utils import export_to_git, GitExportError
 
 
 LOGGER = get_task_logger(__name__)
