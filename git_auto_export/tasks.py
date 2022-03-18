@@ -1,4 +1,4 @@
-from celery.task import task
+from celery import shared_task  # pylint: disable=import-error
 from celery.utils.log import get_task_logger
 
 from opaque_keys.edx.keys import CourseKey
@@ -9,7 +9,7 @@ from cms.djangoapps.contentstore.git_export_utils import export_to_git, GitExpor
 LOGGER = get_task_logger(__name__)
 
 
-@task()
+@shared_task
 def async_export_to_git(course_key_string, user=None):
     """
     Exports a course to Git.
