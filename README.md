@@ -1,3 +1,11 @@
+
+⛔️ DEPRECATION WARNING
+======================
+
+This repository is deprecated. Please see [open-edx-plugins](https://github.com/mitodl/open-edx-plugins) for all the future updates and development.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 #### Steps to install on edX platform:
 
 - open cms.env and lms.env or private.py and set FEATURES flags
