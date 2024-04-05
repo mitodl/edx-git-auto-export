@@ -2,7 +2,8 @@
 ⛔️ DEPRECATION WARNING
 ======================
 
-This repository is deprecated. Please see `open-edx-plugins <https://github.com/mitodl/open-edx-plugins>`__ for all the future updates and development.
+This repository is deprecated. Please see [open-edx-plugins](https://github.com/mitodl/open-edx-plugins) for all the future updates and development.
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 #### Steps to install on edX platform:
